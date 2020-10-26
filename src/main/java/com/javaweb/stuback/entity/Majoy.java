@@ -1,0 +1,36 @@
+package com.javaweb.stuback.entity;
+
+import java.io.Serializable;
+
+import com.baomidou.mybatisplus.extension.activerecord.Model;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.experimental.Accessors;
+
+/**
+ * <p>
+ * 专业表
+ * </p>
+ *
+ * @author jobob
+ * @since 2020-10-26
+ */
+@Data
+@EqualsAndHashCode(callSuper = false)
+@Accessors(chain = true)
+public class Majoy implements Serializable {
+
+    private static final long serialVersionUID = 1L;
+
+    /**
+     * 专业名
+     */
+    private String mName;
+
+    /**
+     * 班级名称
+     */
+    private String cName;
+
+
+}
